@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    position: sticky;
+}
+.navbar-cont{
+    display:flex;
+    justify-content: space-between;
+    margin:20px 10px;
+    background:#E6F5F3;
+    padding:12px 16px;
+    border-radius: 36px;
+    border: 1px solid #54B9AF;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-img{
+    display: block;
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+}
+.navbar-actions{
+    display:flex;
+    margin-top:5px;
+}
+.navbar-actions-list{
+    display:flex;
+    gap:20px
+}
+
+.actions-list{
+    list-style: none;
+}
+.actions-link{
+    text-decoration: none;
+    color: #929191;
+}
+.actions-link.active{
+    color: #006B61;
+    border-radius: 20px;
+    padding:0 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid #006B61;
+    border-right: 1px solid #006B61;
+}
+
+.start-btn{
+    padding:6px 16px;
+    border-radius: 30px;
+    background: #006B61;
+    color:#fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow .15s ease, transform .05s ease;
+}
+.hamburger{
+    display:none;
+    gap:5px;
+    flex-direction: column;
+    cursor: pointer;
+    margin:5px;
+}
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:#000;
+    transition: all 0.3s ease;
+    display: block;
+}
+.hamburger span:nth-child(1) {
+  transform: translateY(0) rotate(0deg);
+}
+.hamburger span:nth-child(2) {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.hamburger span:nth-child(3) {
+  transform: translateY(0) rotate(0deg);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
+
+.mobile-menu{
+    display:none;
+}
+
+/*--repsonsive design for navbar--*/
+@media(max-width:768px){
+
+    .hamburger{
+        display:flex;
+    }
+    
+    .navbar-cont .navbar-actions,
+    .navbar-cont .navbar-btn{
+        display:none;
+    }
+    
+    .mobile-menu{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#fff;
+        padding:25px 0;
+        margin-top:0;
+        border-radius:0 0 20px 20px;
+        box-shadow:0 4px 15px rgba(0,0,0,0.1);
+        align-items:center;
+        gap:25px;
+    }
+    
+    .mobile-menu.active{
+        display:flex;
+    }
+    
+    .mobile-menu .navbar-actions-list{
+        flex-direction:column;
+        gap:20px;
+        align-items:center;
+    }
+
+    .mobile-menu .start-btn{
+        background:#006B61;
+        color:#fff;
+        padding:10px 22px;
+        border-radius:12px;
+    }
+}
+
+@media(max-width:480px){
+    
+    .navbar-cont{
+        margin:10px 5px;
+        padding:10px 12px;
+    }
+    
+    .logo-img{
+        height:28px;
+    }
+    
+    .hamburger span{
+        width:20px;
+        height:2px;
+    }
+    
+    .mobile-menu{
+        padding:15px 0;
+        gap:15px;
+    }
+    
+    .mobile-menu .navbar-actions-list{
+        gap:12px;
+    }
+    
+    .mobile-menu .start-btn{
+        padding:8px 16px;
+        font-size:14px;
+    }
+}
