@@ -1,0 +1,273 @@
+.page-header-container{
+    margin:60px 40px;
+
+}
+.page-header{
+    display:flex;
+    gap:30px;
+}
+.page-header-cont{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    flex:1;
+}
+.page-header-cont span{
+   color:#33ABA0;
+}
+.page-header-img{
+    flex:1;
+    margin:0 20px;
+}
+.bg-box2{
+  background: #33ABA0;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    border-radius: 28px;
+    left: 30px;
+}
+.bg-box1{
+      background: #8ACFC8;
+    position: relative;
+    width: 212px;
+    height: 130px;
+    border-radius: 28px;
+    left: 250px;
+    bottom: 60px;
+}
+.bg-box3{
+  background: #33ABA0;
+    width: 71px;
+    height: 46px;
+    position: relative;
+    border-radius: 9px;
+    left: 360px;
+    bottom: 140px;
+}
+.header-img1{
+   position: relative;
+    width: 250px;
+    height: 200px;
+    bottom: 320px;
+    left: 150px;
+    border-radius: 28px;
+}
+.header-img2{
+    position: relative;
+    width: 150px;
+    height: 110px;
+    border-radius: 28px;
+    bottom: 210px;
+    right: 260px;
+}
+/*--responsiove design for page header--*/
+@media(max-width:992px){
+    .page-header{
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    .page-header-img{
+        margin-top:70px;
+    }
+}
+
+/*--career section--*/
+.career-section {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.career-block {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-left:30px;
+}
+.career-content {
+  flex: 1;
+}
+
+.career-content h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.career-content p {
+  color: #555;
+  line-height: 1.6;
+}
+.career-image {
+  flex: 1;
+  position: relative;
+  min-height: 220px;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-card {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  background: #bfe5e0;
+  border-radius: 14px;
+}
+.icon-card {
+  position: relative; 
+  width: 180px;
+  height: 160px;
+  background: #fff;
+  border:1px solid #55A0D1;
+  margin:10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  display: flex;
+  right: 100px;
+  top: 50px;
+}
+
+.icon-card img {
+  width: 90px;
+}
+/*--responsive design for career--*/
+@media (max-width: 768px) {
+  .career-block {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .career-image {
+    min-height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .career-section {
+    padding: 40px 20px;
+  }
+
+  .bg-card {
+    width: 240px;
+    height: 150px;
+  }
+
+  .icon-card {
+    width: 150px;
+    height: 130px;
+  }
+
+  .icon-card img {
+    width: 60px;
+  }
+}
+
+/*--resume section--*/
+.resume-container{
+    
+    background:#E6F5F3;
+    padding:30px 30px;
+}
+.resume{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    align-items:center;
+    text-align: center;
+}
+.resume-img{
+    width:300px;
+    height:200px;
+}
+.resume-btn{
+        width:250px;
+    height:20px;
+    display: inline-block;
+    align-items: center;
+    gap: 10px;
+    background:#2C3E50;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(max-width:480px){
+    .resume-btn{
+        width:170px;
+        height:18px;
+        font-size:16px;
+    }
+    .resume-img{
+        width:250px;
+        height:150px;
+    }
+}
+
+/*--touch section--*/
+.touch-container{
+    background:#fff; 
+}
+.touch{
+    background: linear-gradient(90deg, #001917 0%, #003B35 100%);
+    display:flex;
+    gap:30px;
+    margin:40px 30px;
+    border-radius: 28px;
+    padding:40px 20px;
+}
+.touch-info{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    flex:1;
+}
+.touch-info h3{
+    color:#fff;
+}
+.touch-info p{
+    color:#fff;
+}
+.touch-btn{
+    width:120px;
+    height:20px;
+    display: inline-block;
+    align-items: center;
+    gap: 10px;
+    background:#94D6F9;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.arrow-back{
+    width:20px;
+    height:20px;
+}
+.touch-img{
+    flex:1;
+}
+.touch-bg-img{
+    width:300px;
+    height:200px;
+}
+
+/*--responsive design for touch--*/
+@media(max-width:768px){
+    .touch{
+        display:flex;
+        flex-direction: column-reverse;
+        gap:30px;
+        align-items: center;
+    }
+}
+@media(max-width:480px){
+    .touch-bg-img{
+        width:200px;
+        height:150px;
+    }
+}
