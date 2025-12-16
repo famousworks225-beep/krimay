@@ -324,7 +324,7 @@
 
 @media (max-width: 480px) {
     .card {
-        width: 100%;
+        width: 90%;
         margin:0 20px;
     }
 
