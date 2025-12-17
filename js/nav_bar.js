@@ -1,4 +1,6 @@
-   
+class SpecialNavBar extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `   
    <nav>
         <div class="navbar-cont">
             <!--navbar logo-->
@@ -41,4 +43,16 @@
             </div>
         </div>
     </nav>
-    <script src="js/navbar.js"></script>
+    <script src="js/navbar.js"></script>`;
+
+    const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobile-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+});
+
+    }
+}
+customElements.define('special-nav-bar', SpecialNavBar);

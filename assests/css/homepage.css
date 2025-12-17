@@ -708,6 +708,9 @@ background: linear-gradient(90deg, #2B5876 0%, #4E4376 50%, #00AA9A 100%);
     padding:10px 20px;
     text-decoration: none;
 }
+.card-btn-3{
+    background: #7DFFF3;
+}
 .card-btn{
     margin-top: 20px;
     align-items: center;

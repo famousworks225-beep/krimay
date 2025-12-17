@@ -1,4 +1,6 @@
-<footer class="footer">
+class specialFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<footer class="footer">
       <div class="footer-cont">
         <div class="footer-logo">
           <img src="assests/images/footer-logo.png" alt="logo" class="footer-img"/>
@@ -46,4 +48,8 @@
           <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-    </footer>
+    </footer>`;
+    }
+}  
+
+customElements.define('special-footer', specialFooter);
