@@ -48,7 +48,8 @@ class SpecialNavBar extends HTMLElement {
 
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobile-menu");
-
+    
+    // hamburger menu toggle
     hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     mobileMenu.classList.toggle("active");
