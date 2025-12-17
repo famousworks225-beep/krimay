@@ -42,16 +42,27 @@ class SpecialNavBar extends HTMLElement {
                 <a href="#" class="start-btn">Start Learning</a>
             </div>
         </div>
-    </nav>
-    <script src="js/navbar.js"></script>`;
+    </nav>`;
+
+        
 
     const hamburger = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-hamburger.addEventListener("click", () => {
+    hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     mobileMenu.classList.toggle("active");
 });
+
+// Set active link based on current page
+        const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+        const links = this.querySelectorAll('.actions-link');
+        links.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === currentFile) {
+                link.classList.add('active');
+            }
+        });
 
     }
 }

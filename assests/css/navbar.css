@@ -132,6 +132,7 @@ nav{
         box-shadow:0 4px 15px rgba(0,0,0,0.1);
         align-items:center;
         gap:25px;
+        z-index:2;
     }
     
     .mobile-menu.active{
